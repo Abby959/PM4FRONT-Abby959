@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: rgb(134 134 139 / 1);
+  --secondary-color: #fff;
+  --tertiary-color: black;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+footer {
+  margin-top: auto;
+
+}
+
+.container {
+  padding: 0 1.5rem;
+  width: 100%;
+  max-width: 100%;
+  background-color: black;
+  color: whitesmoke;
+}
+
