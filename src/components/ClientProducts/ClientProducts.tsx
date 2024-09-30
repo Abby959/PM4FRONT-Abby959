@@ -69,7 +69,7 @@ const products = [
 ]
 
 const ClientProducts = async () => {
-  const products = await getProductsService()
+  // const products = await getProductsService()
 
 
   // const ClientProducts = () => {
