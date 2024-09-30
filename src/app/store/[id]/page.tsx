@@ -4,9 +4,6 @@ import { getProductsByIdService } from "@/services/productsServices";
 import { notFound } from "next/navigation";
 
 const page = async ({ params }: { params: { id: string } }) => {
-
-    
-
     const product = await getProductsByIdService(Number(params.id))
 
     if(!product) notFound()
