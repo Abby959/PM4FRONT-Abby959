@@ -1,4 +1,3 @@
-
 import ClientProducts from '@/components/ClientProducts/ClientProducts'
 
 const Entrada = () => {
