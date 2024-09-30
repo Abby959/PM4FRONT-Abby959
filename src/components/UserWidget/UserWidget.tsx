@@ -11,7 +11,7 @@ const UserWidget = () => {
             {user?.login ?
                 <>
                     <Link href={"/cart"}>
-                        <div className='cursor-pointer text-black hover:scale-110'>
+                        <div className='cursor-pointer text-black hover:scale-110 relative'>
                             <TfiShoppingCart />
                         </div>
                     </Link>

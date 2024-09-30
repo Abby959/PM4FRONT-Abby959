@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const signIn = () => {
   return (
-    <main className="container">
-      <h1 className='text-center' color="text-primary">Sign In</h1>
+    <main className="container mt-4">
+      <h1 className='text-center text-lg' color="text-primary">Sign In</h1>
       <LoginForm />
     </main>
   );

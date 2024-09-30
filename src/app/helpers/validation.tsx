@@ -5,7 +5,8 @@ export const validateEmail = (email: string) => {
     if (!regexEmail.test(email)) {
         validation = "Invalid email format";
     } else {
-        validation = "Valid email";
+        // validation = "Valid email";
+        validation = "";
     }
 
     return validation;
@@ -19,7 +20,8 @@ export const validatePassword = (password: string): string => {
     if (!regexPassword.test(password)) {
         validation = "Invalid password format. Must be at least 8 characters, with at least one uppercase letter, one lowercase letter, one number, and one special character.";
     } else {
-        validation = "Valid password";
+        // validation = "Valid password";
+        validation = "";
     }
 
     return validation;
