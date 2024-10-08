@@ -3,7 +3,7 @@ import React from 'react'
 
 const Features = () => {
     return (
-        <div className='flex flex-col p-4 gap-4'>
+        <div className='flex flex-col p-4 gap-4 '>
             <div className='flex-1 w-full max-h-[300px] overflow-hidden rounded-sm'>
                 <Image
                     className='hover:scale-110 transition duration-150 ease-in-out'

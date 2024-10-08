@@ -8,7 +8,7 @@ import Link from 'next/link'
 const Card: FC<Products> = ({ categoryId, id, name, description, price, stock, image }) => {
     const [isDescpritionVisible, setIsDescpritionVisible] = useState(false)
     return (
-        <div className='w-[400px] min-h-[500px] p-4 box-content flex flex-col gap-1 items-center'>
+        <div className='w-[400px] min-h-[500px] p-4 box-content flex flex-col gap-1 items-center bg-black border border-gray-700 rounded-lg'>
             <div className='w-[400px] h-[300px]'>
                 <Image
                     src={image}
@@ -24,7 +24,7 @@ const Card: FC<Products> = ({ categoryId, id, name, description, price, stock, i
 
             <button
                 onClick={() => setIsDescpritionVisible(!isDescpritionVisible)}
-                className='bg-gray-800 w-36 p-1 rounded-lg text-sm text-white border border-gray-600 hover:bg-transparent hover:border-white transition-colors duration-300'>
+                className='bg-gray-800 w-72 p-1 rounded-lg text-xs text-white border border-gray-600 hover:bg-transparent hover:border-white transition-colors duration-300'>
                 See {isDescpritionVisible ? "less" : "more"} ...
             </button>
 
@@ -32,7 +32,7 @@ const Card: FC<Products> = ({ categoryId, id, name, description, price, stock, i
             <p>Price: {price}</p>
             <p>Stock: {stock}</p>
             <Link className='w-fit' href={`/store/${id}`}>
-                <button className='bg-gradient-to-r from-blue-800 to-indigo-900 p-2 rounded-lg w-20 hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 text-white'>Buy</button>
+                <button className='bg-gradient-to-r from-blue-800 to-indigo-900 p-2 rounded-lg w-72 hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 text-white'>Buy</button>
             </Link>
         </div>
     )

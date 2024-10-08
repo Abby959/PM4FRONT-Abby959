@@ -1,13 +1,13 @@
 "use client"
-import { Products } from '@/app/interface';
+import { Order, Products } from '@/app/interface';
 import AuthContext from '@/contexts/authContext';
 import React, { useContext, useEffect, useState } from 'react'
 import { TfiShoppingCart } from 'react-icons/tfi';
 
 const Cart = () => {
-  const { user } = useContext(AuthContext)
+  const { user, setUser } = useContext(AuthContext)
   const [cart, setCart] = useState<Products[] | []>([]);
-
+console.log(user)
   useEffect(() => {
     setCart(JSON.parse(localStorage.getItem("cart") || "[]"))
   }, [])
@@ -27,7 +27,16 @@ const Cart = () => {
         products
       }),
     })
-      .then(() => {
+      .then((res) => res.json())
+      .then((res) => {
+
+        const products = res.products.map((p:Products)=>({date: res.date, id:  p.id, status: res.status}))
+setUser({ 
+  ...user,
+  user:{...user?.user,orders:[...user?.user.orders!, ...products]}
+
+
+})
         localStorage.setItem("cart", JSON.stringify([]));
         setCart([]);
         alert("Success!");

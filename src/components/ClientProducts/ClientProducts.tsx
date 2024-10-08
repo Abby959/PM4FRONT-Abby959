@@ -92,7 +92,7 @@ const ClientProducts = async () => {
 //     if (isLoading) return <h1>Loading...</h1>;
 //     if (hasError) return <h1>Ups!</h1>;
   return (
-    <div className='flex flex-wrap gap-3 justify-center'>
+    <div className='flex flex-wrap gap-3 justify-center bg-black my-4'>
 
       {products.map((p, i) => (
         <Card

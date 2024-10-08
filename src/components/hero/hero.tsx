@@ -11,7 +11,7 @@ const Hero = () => {
         <Link href={"/store"} >
         <button className='bg-gradient-to-r from-blue-800 to-indigo-900 p-3 rounded-lg w-20 hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 text-white'>Buy</button>
         </Link>
-      <p className='text-center'>Release Price <br/> U$D 700</p>
+      <p className='text-center'>Release Price <br/> U$S 700</p>
     </div>
   )
 }

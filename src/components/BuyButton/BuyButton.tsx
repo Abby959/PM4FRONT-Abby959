@@ -27,10 +27,10 @@ const BuyButton = ({ product }: BuyButtonProps) => {
         }
     };
     return (
-
-        <button onClick={handleBuy} className='bg-gradient-to-r from-blue-800 to-indigo-900 p-3 rounded-lg w-full hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 text-white'>
+        
+        <button onClick={handleBuy} className='bg-gradient-to-r from-blue-800 to-indigo-900 p-3 rounded-lg w-52 hover:bg-gradient-to-r hover:from-slate-900 hover:to-slate-700 text-white'>
             Add to cart
-        </button>
+            </button>
     )
 }
 
